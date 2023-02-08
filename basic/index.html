@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="basic.css" />
+    <script src="basic.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>입력양식</h1>
+
+    <form action="/signup" method="post">
+      <div>
+        <label>First Name:</label>
+        <input type="text" required />
+      </div>
+      <div>
+        <label>Last Name:</label>
+        <input type="text" required />
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="email" required />
+      </div>
+      <div>
+        <label>Gender : </label>
+        <input type="radio" name="gender" value="Male" required />Male
+        <input type="radio" name="gender" value="FeMale" required />Female
+      </div>
+      <div>
+        <label>Favorite : </label>
+        <input type="checkbox" id="inlineCheckbox1" value="option1" />HTML
+        <input type="checkbox" id="inlineCheckbox2" value="option2" />JAVA
+        <input type="checkbox" id="inlineCheckbox2" value="option3" />JAVASCRIPT
+      </div>
+      <div>
+        <label>Browser : </label>
+        <select name="browser" id="browser">
+          <option value="chrome" selected>크롬</option>
+          <option value="firefox">파이어폭스</option>
+          <option value="whale">웨일</option>
+        </select>
+      </div>
+      <div>
+        <label>Birthday : </label>
+        <input type="date" name="birthday" required />
+      </div>
+
+      <!-- <input type="submit" value="Submit" />
+     -->
+      <button onclick="validateForm()">제출</button>
+    </form>
+  </body>
+</html>
