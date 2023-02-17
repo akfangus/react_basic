@@ -22,6 +22,7 @@ export default function Body() {
     return state.todo;
   });
   console.log("to", todo);
+  localStorage.setItem("todos", JSON.stringify(todo));
   const dispatch = useDispatch();
   const toDoNotDone = todo.filter((v) => !v.isDone);
   const toDoisDone = todo.filter((v) => v.isDone);
